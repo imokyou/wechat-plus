@@ -28,7 +28,7 @@ go get -u github.com/silenceper/gowatch
 一个web开发框架，方便快速构建一个web应用<br />官网： [https://github.com/gin-gonic/gin](https://github.com/gin-gonic/gin)
 <a name="MzLXD"></a>
 ### Wechat SDK For Go
-使用Golang对微信公众号，小程序，云开发等API进行封装，使得Go项目中可以方便上手<br />官网： [https://github.com/silenceper/wechat/](https://github.com/silenceper/wechat/) <br />文档：[https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc](https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc)
+使用Golang对微信公众号，小程序，云开发等API进行封装，使得Go项目中可以方便上手<br />官网： [https://github.com/imokyou/wechat-plus/](https://github.com/imokyou/wechat-plus/) <br />文档：[https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc](https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc)
 <a name="pNPPj"></a>
 ### 云开发
 集成数据库，存储，云函数等功能的平台<br />使用文档：[https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-http-api/](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-http-api/)<br />在开始开发前，请注册一个小程序获取 `app_id` , `app_secret`参数，并开启云开发功能。

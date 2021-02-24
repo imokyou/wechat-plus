@@ -4,21 +4,21 @@
 
 <a name="RjeGP"></a>
 ## API说明
-参考微信云开发文档 [数据库篇](https://developers.weixin.qq.com/minigame/dev/wxcloud/reference-http-api/database/#%E6%95%B0%E6%8D%AE%E5%BA%93)，可以先阅读其原始的api提供的方法和说明，在[SDK DOC](https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc#Tcb.DatabaseAdd)中都可以找到对应的方法以及参数。
+参考微信云开发文档 [数据库篇](https://developers.weixin.qq.com/minigame/dev/wxcloud/reference-http-api/database/#%E6%95%B0%E6%8D%AE%E5%BA%93)，可以先阅读其原始的api提供的方法和说明，在[SDK DOC](https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc#Tcb.DatabaseAdd)中都可以找到对应的方法以及参数。
 
-主要利用到[SDK DOC](https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc#Tcb.DatabaseAdd)中的如下方法，其他方法可在文档中找到，sdk文档中以 `Database` 开头的方法即为数据库相关的方法调用。
+主要利用到[SDK DOC](https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc#Tcb.DatabaseAdd)中的如下方法，其他方法可在文档中找到，sdk文档中以 `Database` 开头的方法即为数据库相关的方法调用。
 ```go
 func (tcb *Tcb) DatabaseAdd(env, query string) (*DatabaseAddRes, error) //数据库内容保存
 func (tcb *Tcb) DatabaseCount(env, query string) (*DatabaseCountRes, error)//数据库计数
 func (tcb *Tcb) DatabaseQuery(env, query string) (*DatabaseQueryRes, error)//数据库内容查询
 ```
-返回结果对应字段说明： [`DatabaseAddRes`](https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc#DatabaseAddRes) ， [`DatabaseCountRes`](https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc#DatabaseCountRes) , [`DatabaseQueryRes`](https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc#DatabaseQueryRes) 
+返回结果对应字段说明： [`DatabaseAddRes`](https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc#DatabaseAddRes) ， [`DatabaseCountRes`](https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc#DatabaseCountRes) , [`DatabaseQueryRes`](https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc#DatabaseQueryRes) 
 
 <a name="VKuDQ"></a>
 ## 包引入
 本例中引入的WeChat sdk版本为v1.2.3版本，通过如下方法引入
 ```bash
-go get github.com/silenceper/wechat@v1.2.3
+go get github.com/imokyou/wechat-plus@v1.2.3
 ```
 可以在go.mod文件中看到引入的包以及对应的版本：
 ```go
@@ -28,7 +28,7 @@ go 1.13
 
 require (
 	github.com/gin-gonic/gin v1.5.0
-	github.com/silenceper/wechat v1.2.3 // indirect
+	github.com/imokyou/wechat-plus v1.2.3 // indirect
 )
 ```
 
@@ -44,9 +44,9 @@ package main
 import (
 	"io/ioutil"
 
-	"github.com/silenceper/wechat"
-	"github.com/silenceper/wechat/cache"
-	"github.com/silenceper/wechat/tcb"
+	"github.com/imokyou/wechat-plus"
+	"github.com/imokyou/wechat-plus/cache"
+	"github.com/imokyou/wechat-plus/tcb"
 	"gopkg.in/yaml.v2"
 )
 

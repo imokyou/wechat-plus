@@ -8,7 +8,7 @@ func (tcb *Tcb) UploadFile(env, path string) (*UploadFileRes, error) {
 func (tcb *Tcb) BatchDownloadFile(env string, fileList []*DownloadFile) (*BatchDownloadFileRes, error) {
 ```
 
-返回对应的返回结果在这里可以查看，[UploadFileRes](https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc#UploadFileRes)，[BatchDownloadFileRes](https://pkg.go.dev/github.com/silenceper/wechat/tcb?tab=doc#BatchDownloadFileRes)
+返回对应的返回结果在这里可以查看，[UploadFileRes](https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc#UploadFileRes)，[BatchDownloadFileRes](https://pkg.go.dev/github.com/imokyou/wechat-plus/tcb?tab=doc#BatchDownloadFileRes)
 
 <a name="264b81c5"></a>
 ## 接收附件上传内容

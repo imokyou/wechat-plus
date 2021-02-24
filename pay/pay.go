@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/silenceper/wechat/context"
-	"github.com/silenceper/wechat/util"
+	"github.com/imokyou/wechat-plus/context"
+	"github.com/imokyou/wechat-plus/util"
 )
 
 var payGateway = "https://api.mch.weixin.qq.com/pay/unifiedorder"

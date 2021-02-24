@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/silenceper/wechat/util"
+	"github.com/imokyou/wechat-plus/util"
 )
 
 //MediaType 媒体文件类型

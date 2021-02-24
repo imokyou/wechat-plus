@@ -1,4 +1,4 @@
-module github.com/silenceper/wechat
+module github.com/imokyou/wechat-plus
 
 go 1.13
 

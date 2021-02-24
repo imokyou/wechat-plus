@@ -9,7 +9,7 @@
 >推荐使用go module 进行管理
 
 ```
-go get github.com/silenceper/wechat@v1.2.3
+go get github.com/imokyou/wechat-plus@v1.2.3
 ```
 
 **初始化配置**
@@ -38,7 +38,7 @@ if err != nil {
 }
 ```
 
-更多使用方法参考[pkg.go.dev](https://pkg.go.dev/github.com/silenceper/wechat@v1.2.3/tcb?tab=doc#Tcb)
+更多使用方法参考[pkg.go.dev](https://pkg.go.dev/github.com/imokyou/wechat-plus@v1.2.3/tcb?tab=doc#Tcb)
 
 ## Demo
 ### 使用wechat sdk开发一个留言板
