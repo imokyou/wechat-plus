@@ -1,7 +1,7 @@
 package context
 
 import (
-	"github.com/silenceper/wechat/v2/openplatform/config"
+	"github.com/imokyou/wechat-plus/v2/openplatform/config"
 )
 
 // Context struct

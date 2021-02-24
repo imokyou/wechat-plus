@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/silenceper/wechat/v2/util"
+	"github.com/imokyou/wechat-plus/v2/util"
 )
 
 const (
