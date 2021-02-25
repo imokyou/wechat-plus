@@ -173,6 +173,8 @@ func PostXML(uri string, obj interface{}) ([]byte, error) {
 		return nil, err
 	}
 
+	fmt.Println("xmlData", string(xmlData))
+
 	body := bytes.NewBuffer(xmlData)
 	response, err := http.Post(uri, "application/xml;charset=utf-8", body)
 	if err != nil {
