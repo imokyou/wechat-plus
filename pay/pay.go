@@ -94,6 +94,7 @@ type payRequest struct {
 	LimitPay       string     `xml:"limit_pay,omitempty"`   //
 	OpenID         string     `xml:"openid,omitempty"`      // 用户标识
 	SceneInfo      string     `xml:"scene_info,omitempty"`  // 场景信息
+	Version        string     `xml:"version,omitempty"`
 }
 
 type PayDetail struct {
