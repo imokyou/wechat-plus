@@ -69,6 +69,8 @@ type PreOrder struct {
 
 // payRequest 接口请求参数
 type payRequest struct {
+	XMLName struct{} `xml:"xml" json:"-"`
+
 	AppID      string `xml:"appid"`
 	MchID      string `xml:"mch_id"`
 	DeviceInfo string `xml:"device_info,omitempty"`
