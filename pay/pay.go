@@ -39,6 +39,7 @@ type Params struct {
 	Attach     string
 	GoodsTag   string
 	NotifyURL  string
+	Version    string
 }
 
 // Config 是传出用于 js sdk 用的参数
@@ -94,7 +95,7 @@ type payRequest struct {
 	LimitPay       string     `xml:"limit_pay,omitempty"`   //
 	OpenID         string     `xml:"openid,omitempty"`      // 用户标识
 	SceneInfo      string     `xml:"scene_info,omitempty"`  // 场景信息
-	Version        string     `xml:"version,omitempty"`
+	Version        string     `xml:"version"`
 }
 
 type PayDetail struct {
@@ -174,6 +175,7 @@ func (pcf *Pay) PrePayOrder(p *Params) (payOrder PreOrder, err error) {
 	param["attach"] = p.Attach
 	param["goods_tag"] = p.GoodsTag
 	param["notify_url"] = notifyURL
+	param["version"] = p.Version
 
 	bizKey := "&key=" + pcf.PayKey
 	str := orderParam(param, bizKey)
@@ -194,6 +196,7 @@ func (pcf *Pay) PrePayOrder(p *Params) (payOrder PreOrder, err error) {
 		Detail:         &PayDetail{Text: p.Detail},
 		Attach:         p.Attach,
 		GoodsTag:       p.GoodsTag,
+		Version:        p.Version,
 	}
 	rawRet, err := util.PostXML(payGateway, request)
 	if err != nil {
